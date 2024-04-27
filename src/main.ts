@@ -22,7 +22,7 @@ async function bootstrap() {
 
   const server = http.createServer((req, res) => {
     res.statusCode = 200;
-    res.end('This is an HTTP response');
+    res.end('Welcome to Auth Microservice');
   });
 
   server.listen(process.env.PORT);

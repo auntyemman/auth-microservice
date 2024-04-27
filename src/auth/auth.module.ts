@@ -36,7 +36,7 @@ import { PasswordReset, PasswordResetSchema } from './entities/password-reset.en
           transport: Transport.RMQ,
           options: {
             urls: config.get('RABBITMQ_URL'),
-            queue: config.get('QUEUE_NAME'),
+            queue: config.get('AUTH_QUEUE'),
             queueOptions: {
               durable: true,
             },
